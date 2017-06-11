@@ -2,7 +2,7 @@
 # blockmove/tvheadend
 #
 # docker build -f Dockerfile -t blockmove/tvheadend-testing .
-#
+## 2017-06-11 - Added tzdata to apt-get -y install
 ## 2016-04-17 : Init Project
 # -----------------------------------------------------------------------------
 
@@ -23,7 +23,7 @@ CMD ["/sbin/my_init"]
 RUN \
     apt-get update &&\
     apt-get -y install \
-        build-essential pkg-config libssl-dev git bzip2 wget cmake\
+        build-essential pkg-config libssl-dev git bzip2 wget cmake tzdata \
 	libavahi-client-dev zlib1g-dev libcurl4-gnutls-dev python \
 	liburiparser1 liburiparser-dev gettext \
 	libhdhomerun-dev dvb-apps \
