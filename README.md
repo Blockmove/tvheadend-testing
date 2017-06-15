@@ -1,4 +1,4 @@
-####Docker-Image tvheadend 4.1 (testing)
+####Docker-Image tvheadend 4.x (testing)
 ***
 
 
